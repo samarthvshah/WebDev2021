@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Photography Website</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Yellowtail&display=swap" rel="stylesheet"> 
+</head>
+
+    
+<body>
+    <div class="bg-img">
+        <nav>
+            <ul class="topnav" id="dropdownClick">
+                <li><a href="#home" class="logo"><img src="img/pedro-04.jpg"></a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portfolio">My Portfolio</a></li>
+                <li><a href="#pricing">Package Pricing</a></li>
+                <li><a href="#schedule">Schedule an Appointment</a></li>              
+                <li><a href="#contact">Contact Me</a></li>
+                <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <header class="mainContent">
+        <h1 class="text">Let me capture your most important moments</h1>
+        <h2 class="text">Photography is the process of creating still or moving pictures by recording radiation on a sensitive medium like film or an electronic sensor. ... Photography can also be called an art and good photographers often exhibit their oeuvre like artists exhibit their paintings.</h2>
+    </header>
+
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="box">
+                    <div class="logo">
+                        <img src="img/602c3006da8fed322862277a990e75cd.jpg" class="discripImages">
+                    </div>
+                    <h2 class="label">Wedding Photos</h2>
+                    <p class="description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="box">
+                    <div class="logo">
+                        <img src="img/john-cena-562300-1-402.jpg" class="discripImages">
+                    </div>
+                    <h2 class="label">Wedding Photos</h2>
+                    <p class="description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="box">
+                    <div class="logo">
+                        <img src="img/happy-birthday-john-cena-5-epic-matches-of-the-wrestler-which-prove-why-he-is-amongst-the-best-in-the-world.jpg" class="discripImages">
+                    </div>
+                    <h2 class="label">Wedding Photos</h2>
+                    <p class="description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+                
+    <script>
+    function dropdownMenu() {
+        var x = document.getElementById("dropdownClick");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+    </script>
+    
+</body>    
+    
+</html>

@@ -1,0 +1,218 @@
+/* Defaults */
+
+nav, header, footer {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #EDEDED;
+
+}
+
+.container {
+    margin: auto;
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    box-sizing: border-box;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.row::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+
+
+
+/* Nav Bar */
+
+nav {
+    width: 100%;
+    position: absolute;
+    margin: 20px;
+}
+
+nav ul {
+    background-color: transparent;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+ul.topnav li {
+    list-style: none;
+    float: left;
+    line-height: 130px;
+}
+
+ul.topnav li.topnav-right {
+    float: right;
+}
+
+ul.topnav li.dropdownIcon {
+    display: none;
+}
+
+ul.topnav.responsive li.dropdownIcon {
+    position: absolute;
+    top: 53px;
+    right: 0;
+}
+
+ul.topnav li a {
+    display: block;
+    text-decoration: none;
+    min-height: 22px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: black;
+    padding: 14px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+ul.topnav li a:hover {
+/*    background-color: white;*/
+    font-size: 20px;
+}
+
+ul.topnav li a.logo {
+    line-height: 0px;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: content-box;
+}
+
+ul.topnav li a img {
+    width: 150px;
+    height: 150px;
+    padding-left: 75px;
+    padding-right: 75px;
+    line-height: 0px;
+}
+
+/* Content */
+
+
+.logo {
+   width: 100%; 
+}
+    
+.box {
+    background-color: #fff;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.15), 0 2px 3px 0 rgba(0,0,0,0.1);
+    text-align: center;
+    margin: 24px;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+img.discripImages {
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: block;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.bg-img {
+    background-image: url("img/wedding2crop.jpg");
+
+    min-height: 380px;
+    height: 1100px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+}
+
+header.mainContent {
+    text-align: center;
+    padding: 40px;
+}
+
+header.mainContent h1 {
+    padding: 40px;
+/*    text-transform: uppercase;*/
+    font-size: 50px;
+    font-weight: bold;
+}
+
+header.mainContent h2 {
+    padding: 0px 60px;
+    color: darkgray;
+    line-height: 1.2;
+}
+
+h2.label {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+p.description {
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+
+
+
+/* Mobile */
+@media screen and (max-width: 1750px) {
+    ul.topnav li:not(:nth-child(1)) {
+        display: none;
+    }
+    
+    ul.topnav li.dropdownIcon {
+        display: block;
+        float: right;
+    }
+    
+    ul.topnav.responsive {
+        position: relative;
+    }
+    
+    ul.topnav.responsive li {
+        display: inline;
+        float: none;
+        line-height: normal;
+    }
+    
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+}
