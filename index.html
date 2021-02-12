@@ -15,7 +15,7 @@
 <body>
     <div class="bg-img">
         <nav>
-            <ul class="topnav" id="dropdownClick">
+            <ul class="topnav trans" id="dropdownClick">
                 <li><a href="#home" class="logo"><img src="img/pedro-04.jpg"></a></li>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#portfolio">My Portfolio</a></li>
@@ -86,6 +86,7 @@
                     <form>
                         <h2>Join My Newsletter</h2>
                         <input class="inputbox" name="email" type="text" placeholder="Enter your email here">
+                        <button type="button">Submit</button>
                     </form>
                     <ul class="hiddenLinks">
                         <li><a href="#">Privacy Policy</a></li>
@@ -104,10 +105,10 @@
     <script>
     function dropdownMenu() {
         var x = document.getElementById("dropdownClick");
-        if (x.className === "topnav") {
-            x.className += " responsive";
+        if (x.className === "topnav trans") {
+            x.className += " responsive trans";
         } else {
-            x.className = "topnav";
+            x.className = "topnav trans";
         }
     }
     </script>

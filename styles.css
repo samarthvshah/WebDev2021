@@ -56,14 +56,18 @@ body {
 nav {
     width: 100%;
     position: absolute;
-    margin: 20px;
+    padding: 20px;
 }
 
 nav ul {
-    background-color: transparent;
+    background-color: white;
     overflow: hidden;
     margin: 0;
     padding: 0;
+}
+
+nav ul.trans {
+    background-color: transparent;
 }
 
 ul.topnav li {
@@ -166,7 +170,7 @@ footer h2 {
 
 input[type="text"] {
     font-size: 20px;
-    width: 400px;
+    width: 50%;
     min-width: 100px;
     padding: 10px;
 }
@@ -217,10 +221,11 @@ img.discripImages {
 
 
 .bg-img {
-    background-image: url("img/wedding2crop.jpg");
+    background-image: url("img/wedding2.jpg");
 
     min-height: 380px;
     height: 1100px;
+    width: 100%;
 
     background-position: center;
     background-repeat: no-repeat;
@@ -257,6 +262,14 @@ p.description {
     line-height: 1.2;
 }
 
+form button {
+    font-size: 20px;
+    text-align: center;
+    background-color: white;
+    color: dimgray;
+    border-radius: 4px;
+    box-shadow: none;
+}
 
 
 
