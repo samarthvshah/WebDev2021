@@ -55,25 +55,26 @@ body {
 
 nav {
     width: 100%;
-    position: absolute;
     padding: 20px;
+    background-color: white;
+    position: relative;
+}
+
+nav.trans {
+    background-color: transparent;
+    position: absolute;
 }
 
 nav ul {
-    background-color: white;
     overflow: hidden;
     margin: 0;
     padding: 0;
 }
 
-nav ul.trans {
-    background-color: transparent;
-}
-
 ul.topnav li {
     list-style: none;
     float: left;
-    line-height: 130px;
+    line-height: 90px;
 }
 
 ul.topnav li.topnav-right {
@@ -115,8 +116,8 @@ ul.topnav li a.logo {
 }
 
 ul.topnav li a img {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     padding-left: 75px;
     padding-right: 75px;
     line-height: 0px;
@@ -269,6 +270,45 @@ form button {
     color: dimgray;
     border-radius: 4px;
     box-shadow: none;
+}
+
+/** About Me **/
+
+div.aboutMeContainer {
+    padding: 80px;
+    line-height: 1.2;
+    padding-right: 0px;
+}
+
+div.aboutMeContainer div.aboutMeContent {
+    margin: auto;
+    width: 90%;
+}
+
+div.aboutMeContainer h1 {
+    font-size: 40px;
+    color: black;
+    margin-top: 0px;
+}
+
+div.aboutMeContainer h2 {
+    font-size: 30px;
+    color: grey;
+}
+
+div.aboutMeContainer p {
+    font-size: 20px;
+    color: black;
+}
+
+div.aboutMeImg {
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+div.aboutMeImg img {
+    width: 80%;
 }
 
 
