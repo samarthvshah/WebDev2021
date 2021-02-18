@@ -116,11 +116,9 @@ ul.topnav li a:hover {
     font-size: 20px;
 }
 
-ul.topnav li a.logo {
-    line-height: 0px;
-    margin: 0px;
-    padding: 0px;
-    box-sizing:content-box;
+ul.topnav li a.logoText {
+    font-size: 25px;
+    font-weight:600;
 }
 
 ul.topnav li a img {
@@ -219,12 +217,15 @@ div.mainPageContent {
 }
 
 div.mainPageContent h1, div.mainPageContent h2 {
-    color: white;
-    font-size: 80px;
-    margin: 0px;
+   background-color: rgba(191,191,191,0.1);
+    /* background: radial-gradient(grey 10%,); */
+    font-size: 70px;
+     color: black;
+    box-shadow: 5px 5px 5px   rgba(191,191,191,0.1);    
     font-weight: normal;
+    margin: 0px;
       position: fixed; /* or absolute */
-  top: 54%;
+  top: 30%;
   left: 50%;
     transform: translate(-50%, -50%);
 }
