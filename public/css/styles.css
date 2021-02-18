@@ -14,7 +14,7 @@ body {
 }
 
 body.main {
-background: url(/public/img/_MG_4132.jpg) no-repeat center center fixed; 
+background: url(../img/_MG_4132.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -331,3 +331,4 @@ div.aboutMeContent ul.icons li a{
         width: 100%;
         margin: 0;
     }
+}
