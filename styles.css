@@ -8,8 +8,16 @@ body {
     line-height: 1;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    background-color: #EDEDED;
+    background-color: white;
 
+}
+
+body.main {
+background: url(img/wedding2.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .container {
@@ -54,7 +62,7 @@ body {
 /* Nav Bar */
 
 nav {
-    width: 100%;
+/*    width: 100%;*/
     padding: 20px;
     background-color: white;
     position: relative;
@@ -62,7 +70,7 @@ nav {
 
 nav.trans {
     background-color: transparent;
-    position: absolute;
+/*    position: absolute;*/
 }
 
 nav ul {
@@ -126,7 +134,7 @@ ul.topnav li a img {
 /* Footer */
 
 img.logoImage {
-    height: 150px;
+    height: 125px;
     display: block;
     border-radius: 5px;
 }
@@ -136,6 +144,11 @@ footer {
     color: white;
     padding: 60px;
     font-size: 20px;
+    line-height: 0.8;
+}
+
+footer div.container {
+    padding: 0px;
 }
 
 footer ul {
@@ -195,6 +208,18 @@ input[type="text"] {
 
 /* Content */
 
+div.mainPageContent {
+    width: 100%;
+/*    padding: 200px;*/
+    padding-top: 20%;
+    text-align: center;
+    line-height: 1.5;
+}
+
+div.mainPageContent h1,h2 {
+    color: white;
+}
+
 .logo {
    width: 100%; 
 }
@@ -221,6 +246,7 @@ img.discripImages {
 
 
 
+/*
 .bg-img {
     background-image: url("img/wedding2.jpg");
 
@@ -234,6 +260,7 @@ img.discripImages {
 
     position: relative;
 }
+*/
 
 header.mainContent {
     text-align: center;
@@ -276,7 +303,7 @@ form button {
 
 div.aboutMeContainer {
     padding: 80px;
-    line-height: 1.2;
+    line-height: 2;
     padding-right: 0px;
 }
 
@@ -309,6 +336,19 @@ div.aboutMeImg {
 
 div.aboutMeImg img {
     width: 80%;
+}
+
+div.aboutMeContent ul.icons {
+    padding: 0px;
+}
+
+div.aboutMeContent ul.icons li {
+    display: inline-block;
+}
+
+div.aboutMeContent ul.icons li a{
+    color: black;
+    
 }
 
 
