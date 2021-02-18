@@ -63,14 +63,18 @@ background: url(../img/_MG_4132.jpg) no-repeat center center fixed;
 /* Nav Bar */
 
 nav {
-/*    width: 100%;*/
     padding: 20px;
+    padding-bottom: 0px;
     background-color: white;
     position: relative;
 }
 
 nav.trans {
     background-color: transparent;
+}
+
+nav.trans ul.topnav li a {
+    font-weight: bold;
 }
 
 nav ul {
@@ -82,7 +86,7 @@ nav ul {
 ul.topnav li {
     list-style: none;
     float: left;
-    line-height: 90px;
+    line-height: 60px;
 }
 
 ul.topnav li.topnav-right {
@@ -102,18 +106,19 @@ ul.topnav.responsive li.dropdownIcon {
 ul.topnav li a {
     display: block;
     text-decoration: none;
-    min-height: 22px;
+/*    min-height: 23px;*/
     text-align: center;
     text-transform: uppercase;
     color: black;
     padding: 14px;
     padding-left: 60px;
     padding-right: 60px;
+    font-size: 20px;
 }
 
 ul.topnav li a:hover {
 /*    background-color: white;*/
-    font-size: 20px;
+    font-size: 22px;
 }
 
 ul.topnav li a.logoText {
