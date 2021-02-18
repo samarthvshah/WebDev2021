@@ -9,12 +9,12 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     background-color: white;
-    font-weight: 100;
+    font-weight: normal;
 
 }
 
 body.main {
-background: url(img/_MG_4132.jpg) no-repeat center center fixed; 
+background: url(/public/img/_MG_4132.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -71,7 +71,6 @@ nav {
 
 nav.trans {
     background-color: transparent;
-/*    position: absolute;*/
 }
 
 nav ul {
@@ -110,7 +109,6 @@ ul.topnav li a {
     padding: 14px;
     padding-left: 60px;
     padding-right: 60px;
-    font-weight: normal;
 }
 
 ul.topnav li a:hover {
@@ -147,6 +145,7 @@ footer {
     padding: 60px;
     font-size: 20px;
     line-height: 0.8;
+    font-weight: 100;
 }
 
 footer div.container {
@@ -182,6 +181,8 @@ footer ul li {
 
 footer h2 {
     font-weight: normal;
+    font-size: 30px;
+    padding-bottom: 5px;
 }
 
 input[type="text"] {
@@ -212,90 +213,26 @@ input[type="text"] {
 
 div.mainPageContent {
     width: 100%;
-/*    padding: 200px;*/
-    padding-top: 15%;
+/*    padding-top: 15%;*/
     text-align: center;
     line-height: 1.5;
-    position: relative;
 }
 
-div.mainPageContent h1,h2 {
+div.mainPageContent h1, div.mainPageContent h2 {
     color: white;
+    font-size: 80px;
     margin: 0px;
-    font-size: 60px;
-    font-style: normal;
-    text-transform: uppercase;
-    font-weight:100;
+    font-weight: normal;
+      position: fixed; /* or absolute */
+  top: 54%;
+  left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .logo {
    width: 100%; 
 }
-    
-.box {
-    background-color: #fff;
-    box-shadow: 0 0 0 1px rgba(0,0,0,0.15), 0 2px 3px 0 rgba(0,0,0,0.1);
-    text-align: center;
-    margin: 24px;
-    padding: 25px;
-    border-radius: 10px;
-}
 
-img.discripImages {
-    height: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    display: block;
-    background-color: white;
-    border-radius: 10px;
-}
-
-
-
-.bg-img {
-    background-image: url("img/wedding2.jpg");
-
-    min-height: 380px;
-    height: 1100px;
-    width: 100%;
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    position: relative;
-}
-
-header.mainContent {
-    text-align: center;
-    padding: 40px;
-}
-
-header.mainContent h1 {
-    padding: 40px;
-    text-transform: uppercase;
-    font-size: 50px;
-    font-weight: bold;
-}
-
-header.mainContent h2 {
-    padding: 0px 60px;
-    color: darkgray;
-    line-height: 1.2;
-    margin-top: 0px;
-}
-
-h2.label {
-    font-size: 35px;
-    font-weight: bold;
-}
-
-p.description {
-    font-size: 20px;
-    line-height: 1.2;
-}
 
 form button {
     font-size: 20px;
@@ -311,8 +248,8 @@ form button {
 div.aboutMeContainer {
     padding: 80px;
     padding-top: 0px;
-    line-height: 2.5;
-    padding-right: 0px;
+    line-height: 2.7;
+/*    padding-right: 0px;*/
 }
 
 div.aboutMeContainer div.aboutMeContent {
@@ -330,6 +267,7 @@ div.aboutMeContainer h1 {
 div.aboutMeContainer h2 {
     font-size: 30px;
     color: grey;
+    font-weight: normal;
 }
 
 div.aboutMeContainer p {
@@ -393,4 +331,3 @@ div.aboutMeContent ul.icons li a{
         width: 100%;
         margin: 0;
     }
-}
