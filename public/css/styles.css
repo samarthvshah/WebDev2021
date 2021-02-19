@@ -14,7 +14,7 @@ body {
 }
 
 body.main {
-background: url(../img/_MG_4132.jpg) no-repeat center center fixed; 
+background: url(../img/background.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -182,6 +182,10 @@ footer ul li {
     text-align: center;
 }
 
+.footerLeft {
+    padding-left: 40px;
+}
+
 footer h2 {
     font-weight: normal;
     font-size: 30px;
@@ -306,6 +310,43 @@ div.aboutMeContent ul.icons li a{
 
 
 
+/** Portfolio **/
+
+div.portfolioHeader {
+    margin: 60px;
+    margin-left: 120px;
+}
+
+div.portfolioHeader h1 {
+    font-size: 40px;
+    color: black;
+    font-weight: 100;
+}
+
+div.portfolioImageGrid {
+    margin-bottom: 60px;
+}
+
+div.portfolioImageGrid div.portfolioImage {
+    width: 500px;
+    max-width: 500px;
+    max-height: 500px;
+    height: 500px;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+div.portfolioImageGrid div.portfolioImage img {
+    height: 500px;
+    width: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px lightgray;
+}
+
+
 
 /* Mobile */
 @media screen and (max-width: 1750px) {
@@ -333,7 +374,7 @@ div.aboutMeContent ul.icons li a{
         text-align: left;
     }
        
-    .col-4, .col-6 {
+    .col-4, .col-6, .col-5, .col-7 {
         width: 100%;
         margin: 0;
     }
