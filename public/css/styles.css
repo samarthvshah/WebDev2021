@@ -14,7 +14,7 @@ body {
 }
 
 body.main {
-background: url(../img/_MG_4132.jpg) no-repeat center center fixed; 
+background: url(../img/background.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -63,14 +63,18 @@ background: url(../img/_MG_4132.jpg) no-repeat center center fixed;
 /* Nav Bar */
 
 nav {
-/*    width: 100%;*/
     padding: 20px;
+    padding-bottom: 0px;
     background-color: white;
     position: relative;
 }
 
 nav.trans {
     background-color: transparent;
+}
+
+nav.trans ul.topnav li a {
+    font-weight: bold;
 }
 
 nav ul {
@@ -82,7 +86,7 @@ nav ul {
 ul.topnav li {
     list-style: none;
     float: left;
-    line-height: 90px;
+    line-height: 60px;
 }
 
 ul.topnav li.topnav-right {
@@ -102,18 +106,19 @@ ul.topnav.responsive li.dropdownIcon {
 ul.topnav li a {
     display: block;
     text-decoration: none;
-    min-height: 22px;
+/*    min-height: 23px;*/
     text-align: center;
     text-transform: uppercase;
     color: black;
     padding: 14px;
     padding-left: 60px;
     padding-right: 60px;
+    font-size: 20px;
 }
 
 ul.topnav li a.notTitle:hover {
 /*    background-color: white;*/
-    font-size: 20px;
+    font-size: 22px;
 }
 
 ul.topnav li a.titleSize:hover {
@@ -182,6 +187,10 @@ footer ul li {
 
 .footerRight {
     text-align: center;
+}
+
+.footerLeft {
+    padding-left: 40px;
 }
 
 footer h2 {
@@ -308,6 +317,43 @@ div.aboutMeContent ul.icons li a{
 
 
 
+/** Portfolio **/
+
+div.portfolioHeader {
+    margin: 60px;
+    margin-left: 120px;
+}
+
+div.portfolioHeader h1 {
+    font-size: 40px;
+    color: black;
+    font-weight: 100;
+}
+
+div.portfolioImageGrid {
+    margin-bottom: 60px;
+}
+
+div.portfolioImageGrid div.portfolioImage {
+    width: 500px;
+    max-width: 500px;
+    max-height: 500px;
+    height: 500px;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+div.portfolioImageGrid div.portfolioImage img {
+    height: 500px;
+    width: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px lightgray;
+}
+
+
 
 /* Mobile */
 @media screen and (max-width: 1750px) {
@@ -335,7 +381,7 @@ div.aboutMeContent ul.icons li a{
         text-align: left;
     }
        
-    .col-4, .col-6 {
+    .col-4, .col-6, .col-5, .col-7 {
         width: 100%;
         margin: 0;
     }
