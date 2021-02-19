@@ -7,11 +7,10 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Yellowtail&display=swap" rel="stylesheet"> 
-    <script src="https://kit.fontawesome.com/db8726ee19.js" crossorigin="anonymous"></script>
 </head>
     
     
-<body>
+<body id="portfolio">
     <nav>
         <ul class="topnav" id="dropdownClick">
             <li><a href="index.html" class= "logo"><img src = "img/logo.jpg"></a></li>
@@ -29,49 +28,40 @@
         <div class="portfolioHeader">
             <h1>Portfolio</h1>
         </div>
+        
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="img/aboutMe.jpg" id="modalImage">
+          </div>
+
+        </div>
+        
+        
         <div class="portfolioImageGrid">
             <div class="row">
                 <div class="col-3">
                     <div class="portfolioImage">
-                        <img src="img/portfolioImages/DJI_0336.jpg">
+                        <a href="javascript:void(0);" onclick="openModal('img/portfolioImages/DJI_0336.jpg')"><img src="img/portfolioImages/DJI_0336.jpg"></a>
                     </div>
                 </div>
                 <div class="col-3">
                     <div class="portfolioImage">
-                        <img src="img/portfolioImages/IMG_0025.jpg">
+                        <a href="javascript:void(0);" onclick="openModal('img/portfolioImages/IMG_0025.jpg')"><img src="img/portfolioImages/IMG_0025.jpg"></a>
                     </div>
                 </div>
                 <div class="col-3">
                     <div class="portfolioImage">
-                        <img src="img/portfolioImages/IMG_0143.jpg">
+                        <a href="javascript:void(0);" onclick="openModal('img/portfolioImages/IMG_0143.jpg')"><img src="img/portfolioImages/IMG_0143.jpg"></a>
                     </div>
                 </div>
                 <div class="col-3">
                     <div class="portfolioImage">
-                        <img src="img/portfolioImages/IMG_0152.jpg">
-                    </div>
-                </div>
-            </div>
-            
-            <div class="row">
-                <div class="col-3">
-                    <div class="portfolioImage">
-                        <img src="img/portfolioImages/IMG_0790.jpg">
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="portfolioImage">
-                        <img src="img/portfolioImages/IMG_1046.jpg">
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="portfolioImage">
-                        <img src="img/portfolioImages/IMG_2452.jpg">
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="portfolioImage">
-                        <img src="img/portfolioImages/IMG_2581.jpg">
+                        <a href="javascript:void(0);" onclick="openModal('img/portfolioImages/IMG_0152.jpg')"><img src="img/portfolioImages/IMG_0152.jpg"></a>
                     </div>
                 </div>
             </div>
@@ -79,44 +69,67 @@
             <div class="row">
                 <div class="col-3">
                     <div class="portfolioImage">
-                        <img src="img/portfolioImages/IMG_9461.jpg">
+                        <a href="javascript:void(0);" onclick="openModal('img/portfolioImages/IMG_0790.jpg')"><img src="img/portfolioImages/IMG_0790.jpg"></a>
                     </div>
                 </div>
                 <div class="col-3">
                     <div class="portfolioImage">
-                        <img src="img/portfolioImages/IMG_9467.jpg">
+                        <a href="javascript:void(0);" onclick="openModal('img/portfolioImages/IMG_1046.jpg')"><img src="img/portfolioImages/IMG_1046.jpg"></a>
                     </div>
                 </div>
                 <div class="col-3">
                     <div class="portfolioImage">
-                        <img src="img/portfolioImages/IMG_3026.jpg">
+                        <a href="javascript:void(0);" onclick="openModal('img/portfolioImages/IMG_2452.jpg')"><img src="img/portfolioImages/IMG_2452.jpg"></a>
                     </div>
                 </div>
                 <div class="col-3">
                     <div class="portfolioImage">
-                        <img src="img/portfolioImages/IMG_1112.jpg">
+                        <a href="javascript:void(0);" onclick="openModal('img/portfolioImages/IMG_2581.jpg')"><img src="img/portfolioImages/IMG_2581.jpg"></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-3">
+                    <div class="portfolioImage">
+                        <a href="javascript:void(0);" onclick="openModal('img/portfolioImages/IMG_9461.jpg')"><img src="img/portfolioImages/IMG_9461.jpg"></a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="portfolioImage">
+                        <a href="javascript:void(0);" onclick="openModal('img/portfolioImages/IMG_0025.jpg')"><img src="img/portfolioImages/IMG_9467.jpg"></a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="portfolioImage">
+                        <a href="javascript:void(0);" onclick="openModal('img/portfolioImages/IMG_3026.jpg')"><img src="img/portfolioImages/IMG_3026.jpg"></a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="portfolioImage">
+                        <a href="javascript:void(0);" onclick="openModal('img/portfolioImages/IMG_1112.jpg')"><img src="img/portfolioImages/IMG_1112.jpg"></a>
                     </div>
                 </div>
             </div>        
         <div class="row">
                 <div class="col-3">
                     <div class="portfolioImage">
-                        <img src="img/portfolioImages/IMG_1202.jpg">
+                        <a href="javascript:void(0);" onclick="openModal('img/portfolioImages/IMG_1202.jpg')"><img src="img/portfolioImages/IMG_1202.jpg"></a>
                     </div>
                 </div>
                 <div class="col-3">
                     <div class="portfolioImage">
-                        <img src="img/portfolioImages/IMG_2429.jpg">
+                        <a href="javascript:void(0);" onclick="openModal('img/portfolioImages/IMG_2429.jpg')"><img src="img/portfolioImages/IMG_2429.jpg"></a>
                     </div>
                 </div>
                 <div class="col-3">
                     <div class="portfolioImage">
-                        <img src="img/portfolioImages/DJI_0378.jpg">
+                        <a href="javascript:void(0);" onclick="openModal('img/portfolioImages/DJI_0378.jpg')"><img src="img/portfolioImages/DJI_0378.jpg"></a>
                     </div>
                 </div>
                 <div class="col-3">
                     <div class="portfolioImage">
-                        <img src="img/portfolioImages/IMG_0786.jpg">
+                        <a href="javascript:void(0);" onclick="openModal('img/portfolioImages/IMG_0786.jpg')"><img src="img/portfolioImages/IMG_0786.jpg"></a>
                     </div>
                 </div>
             </div>
@@ -124,22 +137,22 @@
         <div class="row">
                 <div class="col-3">
                     <div class="portfolioImage">
-                        <img src="img/portfolioImages/IMG_2787.jpg">
+                        <a href="javascript:void(0);" onclick="openModal('img/portfolioImages/IMG_2787.jpg')"><img src="img/portfolioImages/IMG_2787.jpg"></a>
                     </div>
                 </div>
                 <div class="col-3">
                     <div class="portfolioImage">
-                        <img src="img/portfolioImages/IMG_0060.jpg">
+                        <a href="javascript:void(0);" onclick="openModal('img/portfolioImages/IMG_0060.jpg')"><img src="img/portfolioImages/IMG_0060.jpg"></a>
                     </div>
                 </div>
                 <div class="col-3">
                     <div class="portfolioImage">
-                        <img src="img/portfolioImages/IMG_1318.jpg">
+                        <a href="javascript:void(0);" onclick="openModal('img/portfolioImages/IMG_1318.jpg')"><img src="img/portfolioImages/IMG_1318.jpg"></a>
                     </div>
                 </div>
                 <div class="col-3">
                     <div class="portfolioImage">
-                        <img src="img/portfolioImages/IMG_0892.jpg">
+                        <a href="javascript:void(0);" onclick="openModal('img/portfolioImages/IMG_0892.jpg')"><img src="img/portfolioImages/IMG_0892.jpg"></a>
                     </div>
                 </div>
             </div>
@@ -181,7 +194,10 @@
     </footer>
     
     
-    
+    <!-- Scripts -->
     <script src = "js/dropdown.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="https://kit.fontawesome.com/db8726ee19.js" crossorigin="anonymous"></script>
+
 
 </body>
