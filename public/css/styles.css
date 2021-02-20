@@ -7,7 +7,7 @@ nav, header, footer {
 body {
     line-height: 1;
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
     background-color: white;
     font-weight: normal;
 
@@ -74,7 +74,7 @@ nav.trans {
 }
 
 nav.trans ul.topnav li a {
-    font-weight: bold;
+    font-weight: 300;
 }
 
 nav ul {
@@ -245,7 +245,7 @@ div.mainPageContent h1, div.mainPageContent h2 {
     font-size: 70px;
      color: black;
     box-shadow: 5px 5px 5px   rgba(191,191,191,0.1);    
-    font-weight: normal;
+    font-weight: 200;
     margin: 0px;
       position: fixed; /* or absolute */
   top: 30%;
