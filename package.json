@@ -1,0 +1,16 @@
+{
+  "name": "public",
+  "version": "1.0.0",
+  "description": "Webite Development 2021",
+  "main": "appointment.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Raj Raghulan",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^8.2.8",
+    "firebase-admin": "^9.5.0",
+    "node-require": "0.0.10"
+  }
+}
