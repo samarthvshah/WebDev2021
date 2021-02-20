@@ -434,7 +434,7 @@ body.modal-open {
         text-align: left;
     }
        
-    .col-4, .col-6, .col-5, .col-7 {
+    .col-4, .col-6, .col-5, .col-7, .col-3 {
         width: 100%;
         margin: 0;
     }
