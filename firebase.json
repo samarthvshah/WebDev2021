@@ -5,15 +5,33 @@
   },
   "hosting": {
     "public": "public",
+     "cleanUrls": true,
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
     ],
+    
     "rewrites": [
       {
-        "source": "**",
+        "source": "/",
         "destination": "/index.html"
+      },
+      {
+        "source": "/about",
+        "destination": "/about.html"
+      },
+      {
+        "source": "/appointment",
+        "destination": "/appointment.html"
+      },
+      {
+        "source": "/portfolio",
+        "destination": "/portfolio.html"
+      },
+      {
+        "source": "/pricing",
+        "destination": "/pricing.html"
       }
     ]
   },

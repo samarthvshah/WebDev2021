@@ -2,56 +2,165 @@
 <html lang="en">
 
 <head>
-    <title>Photography Website - Pricing</title>
-    
-    
+    <title>Photography Website - Portfolio</title>
+    <link rel="shortcut icon" type="image/png" href="img/favicon2.png"/>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Yellowtail&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    </head>
+</head>
     
     
-    <body id="pricing">
-        <nav>
-            <ul class="topnav" id="dropdownClick">
-                <li><a href="index.html" class= "logo"><img src = "img/logo.jpg"></a></li>
-                <li><a class = "notTitle" href="about.html">About Me</a></li>
-                <li><a class = "notTitle"href="portfolio.html">My Portfolio</a></li>
-                <li><a class = "notTitle"href="pricing.html">Package Pricing</a></li>
-                <li><a class = "notTitle" href="appointment.html">Schedule an Appointment</a></li>              
+<body id="portfolio">
+    <nav>
+        <ul class="topnav" id="dropdownClick">
+            <li><a href="index.html" class= "logo"><img src = "img/logo.jpg"></a></li>
+            <li><a class = "notTitle" href="about.html">About Me</a></li>
+            <li><a class = "notTitle"href="portfolio.html">My Portfolio</a></li>
+            <li><a class = "notTitle"href="pricing.html">Package Pricing</a></li>
+            <li><a class = "notTitle" href="appointment.html">Schedule an Appointment</a></li>              
 
-                <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
-            </ul>
-        </nav>
+            <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+        </ul>
+    </nav>
+    
+    <hr>
+    
+    <div class="portfolioContainer">
+        <div class="portfolioHeader">
+            <h1>Portfolio</h1>
+        </div>
         
-        <hr>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="img/aboutMe.jpg" id="modalImage">
+          </div>
+
+        </div>
         
-        <div class="pricingContainer">
-            <div class="pricingHeader">
-                <h1>Pricing</h1>
-            </div>
         
-        <div class="piceRow">
+        <div class="portfolioImageGrid">
             <div class="row">
                 <div class="col-3">
-                    <div class="package">
-                        <img src="img/portfolioImages/DJI_0336.jpg"></a>
+                    <div class="portfolioImage">
+                        <a href="javascript:void(0);" onclick="openModal('img/portfolio/DJI_0336.jpg')"><img src="img/portfolio/DJI_0336.jpg"></a>
                     </div>
                 </div>
                 <div class="col-3">
-                    <div class="package">
-                        <img src="img/portfolioImages/IMG_0025.jpg"></a>
+                    <div class="portfolioImage">
+                        <a href="javascript:void(0);" onclick="openModal('img/portfolio/IMG_0025.jpg')"><img src="img/portfolio/DJI_0378.jpg"></a>
                     </div>
                 </div>
                 <div class="col-3">
-                    <div class="package">
-                        <img src="img/portfolioImages/IMG_0143.jpg"></a>
+                    <div class="portfolioImage">
+                        <a href="javascript:void(0);" onclick="openModal('img/portfolio/IMG_0143.jpg')"><img src="img/portfolio/IMG_0143.jpg"></a>
                     </div>
                 </div>
-                
+                <div class="col-3">
+                    <div class="portfolioImage">
+                        <a href="javascript:void(0);" onclick="openModal('img/portfolio/IMG_0152.jpg')"><img src="img/portfolio/IMG_0152.jpg"></a>
+                    </div>
+                </div>
             </div>
-         </div>
+            
+            <div class="row">
+                <div class="col-3">
+                    <div class="portfolioImage">
+                        <a href="javascript:void(0);" onclick="openModal('img/portfolio/IMG_0790.jpg')"><img src="img/portfolio/IMG_0790.jpg"></a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="portfolioImage">
+                        <a href="javascript:void(0);" onclick="openModal('img/portfolio/IMG_1046.jpg')"><img src="img/portfolio/IMG_1046.jpg"></a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="portfolioImage">
+                        <a href="javascript:void(0);" onclick="openModal('img/portfolio/IMG_2452.jpg')"><img src="img/portfolio/IMG_2452.jpg"></a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="portfolioImage">
+                        <a href="javascript:void(0);" onclick="openModal('img/portfolio/IMG_2581.jpg')"><img src="img/portfolio/IMG_2581.jpg"></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-3">
+                    <div class="portfolioImage">
+                        <a href="javascript:void(0);" onclick="openModal('img/portfolio/IMG_9461.jpg')"><img src="img/portfolio/IMG_9461.jpg"></a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="portfolioImage">
+                        <a href="javascript:void(0);" onclick="openModal('img/portfolio/IMG_0025.jpg')"><img src="img/portfolio/IMG_9467.jpg"></a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="portfolioImage">
+                        <a href="javascript:void(0);" onclick="openModal('img/portfolio/IMG_3026.jpg')"><img src="img/portfolio/IMG_3026.jpg"></a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="portfolioImage">
+                        <a href="javascript:void(0);" onclick="openModal('img/portfolio/IMG_1112.jpg')"><img src="img/portfolio/IMG_1112.jpg"></a>
+                    </div>
+                </div>
+            </div>        
+        <div class="row">
+                <div class="col-3">
+                    <div class="portfolioImage">
+                        <a href="javascript:void(0);" onclick="openModal('img/portfolio/IMG_1202.jpg')"><img src="img/portfolio/IMG_1202.jpg"></a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="portfolioImage">
+                        <a href="javascript:void(0);" onclick="openModal('img/portfolio/IMG_2429.jpg')"><img src="img/portfolio/IMG_2429.jpg"></a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="portfolioImage">
+                        <a href="javascript:void(0);" onclick="openModal('img/portfolio/DJI_0378.jpg')"><img src="img/portfolio/DJI_0378.jpg"></a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="portfolioImage">
+                        <a href="javascript:void(0);" onclick="openModal('img/portfolio/IMG_0786.jpg')"><img src="img/portfolio/IMG_0786.jpg"></a>
+                    </div>
+                </div>
+            </div>
+        
+        <div class="row">
+                <div class="col-3">
+                    <div class="portfolioImage">
+                        <a href="javascript:void(0);" onclick="openModal('img/portfolio/IMG_2787.jpg')"><img src="img/portfolio/IMG_2787.jpg"></a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="portfolioImage">
+                        <a href="javascript:void(0);" onclick="openModal('img/portfolio/IMG_0060.jpg')"><img src="img/portfolio/IMG_0060.jpg"></a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="portfolioImage">
+                        <a href="javascript:void(0);" onclick="openModal('img/portfolio/IMG_1318.jpg')"><img src="img/portfolio/IMG_1318.jpg"></a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="portfolioImage">
+                        <a href="javascript:void(0);" onclick="openModal('img/portfolio/IMG_0892.jpg')"><img src="img/portfolio/IMG_0892.jpg"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+    
     
     <footer>
         <div class="row">
@@ -96,6 +205,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.2.8/firebase-firestore.js"></script>
     <script src = "js/index.js"></script> 
     <script src = "js/newsletter.js"></script> 
+    <script src="js/modal.js"></script>
     <script src="https://kit.fontawesome.com/db8726ee19.js" crossorigin="anonymous"></script>
 
 

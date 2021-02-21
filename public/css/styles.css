@@ -407,6 +407,41 @@ div.aboutMeContent ul.icons li a{
     
 }
 
+/** Pricing **/
+
+div.pricingHeader {
+    margin: 60px;
+    margin-left: 120px;
+}
+
+div.pricingHeader h1 {
+    font-size: 40px;
+    color: black;
+    font-weight: normal;
+}
+
+div.portfolioImageGrid {
+    margin-bottom: 60px;
+}
+
+div.portfolioImageGrid div.portfolioImage {
+    width: 80%;
+    max-width: 80%;
+    max-height:  80%;
+    height:  80%;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+div.portfolioImageGrid div.portfolioImage img {
+    height:  80%;
+    width: 80%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px lightgray;
+}
 
 
 /** Portfolio **/
