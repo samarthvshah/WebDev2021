@@ -12,6 +12,22 @@ measurementId: "G-PF3FL3VHK0"
 firebase.initializeApp(firebaseConfig);
 var db = firebase.firestore();
 
+// Initialize and add the map
+function initMap() {
+// The location of Uluru
+const cupertino = { lat: 37.3230, lng: -122.0322 };
+// The map, centered at Uluru
+const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 10,
+    center: cupertino,
+});
+// The marker, positioned at Uluru
+const marker = new google.maps.Marker({
+    position: cupertino,
+    map: map,
+});
+}
+
 db.collection("bookings").add({
     first: "Raj",
     last: "Raghulan",
@@ -26,3 +42,5 @@ db.collection("bookings").add({
 .catch((error) => {
     console.error("Error adding document: ", error);
 });;
+
+    
