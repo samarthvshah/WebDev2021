@@ -255,37 +255,114 @@ div.mainPageContent h1, div.mainPageContent h2 {
    width: 100%; 
 }
 
-.datePicker{
-    height: 100px;
-    width:100px;
+form button {
+    background-color: white;
+    border-width: 1px;
+    box-shadow: 5px 5px 5px lightgray;
+    color: black;
+    padding: 15px 10px 13px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+}
+/** Appointment **/
+
+form button:hover{
+    color:white;
+    background-color: #5d5d5d ;
 }
 
+#datePicker{
+    border-width: 1px;
+    border-radius:5px;
+    transform:scale(1.75);
+    padding-left: 10px;
+    margin-left: 50px;
+}
+
+#time{
+    border-width: 1px;
+    border-radius:5px;
+    transform:scale(1.75);
+    padding-left: 30px;
+    padding-right: 20px;
+    margin-left: 55px;
+}
+
+div.appointmentContainer{
+    padding: 80px;
+    padding-top: 0px;
+    line-height: 2.7;
+}
+div.appointmentContainer div.appointmentContent {
+    margin: auto;
+    width: 90%;
+}
+
+div.appointmentContainer h1 {
+    font-size: 40px;
+    color: black;
+    margin-top: 0px;
+    font-weight: normal;
+}
+
+div.appointmentContainer h2 {
+    font-size: 30px;
+    color: grey;
+    font-weight: normal;
+}
+
+div.appointmentContainer p {
+    font-size: 20px;
+    color: black;
+}
+
+
+div.appointmentContent ul.icons {
+    padding: 0px;
+}
+
+div.appointmentContent ul.icons li {
+    display: inline-block;
+}
+
+div.appointmentContent ul.icons li a{
+    color: black;
+    
+}
  #map {
+        border-radius: 20px;
         height: 500px;
         /* The height is 400 pixels */
         width: 100%;
         /* The width is the width of the web page */
  }
-form button {
-    font-size: 20px;
-    text-align: center;
-    background-color: grey;
-    color: white;
-    border-radius: 4px;
-    box-shadow: none;
-}
+#mapCenter{
 
+    text-align: center;
+}
+.form{
+    border-radius: 10px;
+}
+#availability{
+    text-align:center;
+}
+.days{
+    text-align: center;
+}
 /** About Me **/
 
 div.aboutMeContainer {
-    padding: 80px;
+    content:top;
+    padding: 40px;
     padding-top: 0px;
     line-height: 2.7;
 /*    padding-right: 0px;*/
 }
 
 div.aboutMeContainer div.aboutMeContent {
-    margin: auto;
     width: 90%;
 }
 
@@ -342,7 +419,7 @@ div.portfolioHeader {
 div.portfolioHeader h1 {
     font-size: 40px;
     color: black;
-    font-weight: 100;
+    font-weight: normal;
 }
 
 div.portfolioImageGrid {
@@ -350,10 +427,10 @@ div.portfolioImageGrid {
 }
 
 div.portfolioImageGrid div.portfolioImage {
-    width: 500px;
-    max-width: 500px;
-    max-height: 500px;
-    height: 500px;
+    width: 80%;
+    max-width: 80%;
+    max-height:  80%;
+    height:  80%;
     object-fit: contain;
     display: block;
     margin: auto;
@@ -361,8 +438,8 @@ div.portfolioImageGrid div.portfolioImage {
 }
 
 div.portfolioImageGrid div.portfolioImage img {
-    height: 500px;
-    width: 500px;
+    height:  80%;
+    width: 80%;
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 5px 5px 5px lightgray;
@@ -442,8 +519,12 @@ body.modal-open {
         text-align: left;
     }
        
-    .col-4, .col-6, .col-5, .col-7, .col-3 {
+    .col-4, .col-6, .col-5, .col-7 {
         width: 100%;
         margin: 0;
+    }
+    .col-3{
+        width:50%;
+        margin:0;
     }
 }

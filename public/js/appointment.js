@@ -1,46 +1,58 @@
-var firebaseConfig = {
-apiKey: "AIzaSyDi_V2ho1-oNusU_3cDStqBRra84SoQpr4",
-authDomain: "webdev2021-965d8.firebaseapp.com",
-projectId: "webdev2021-965d8",
-storageBucket: "webdev2021-965d8.appspot.com",
-messagingSenderId: "979942163797",
-appId: "1:979942163797:web:2f4b96315370f279bc9bdc",
-measurementId: "G-PF3FL3VHK0"
-};
 
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
 var db = firebase.firestore();
+function addBooking(){
+    var firstName = document.getElementById("fname").value;
+    var lastName = document.getElementById("lname").value;
+    var email = document.getElementById("email").value;
+    var number = document.getElementById("phoneNumber").value;
+    var time = document.getElementById("time").value;
+    var date = document.getElementById("datePicker").value;
 
-// Initialize and add the map
-function initMap() {
-// The location of Uluru
-const cupertino = { lat: 37.3230, lng: -122.0322 };
-// The map, centered at Uluru
-const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 10,
-    center: cupertino,
-});
-// The marker, positioned at Uluru
-const marker = new google.maps.Marker({
-    position: cupertino,
-    map: map,
-});
+    if(firstName != " "){
+        if(lastName != " "){
+            if(email != " "){
+                if(phoneNumber != " "){
+                    if(time != " "){
+                        if(date != " "){
+                            db.collection("bookings").add({
+                                firstName: firstName,
+                                lastName: lastName,
+                                email: email,
+                                phoneNumber: number,
+                                time:time,
+                                date: date 
+                            })
+                            .then((docRef) => {
+                                alert("Booking Made!");
+                            })
+                            .catch((error) => {
+                                alert("Error adding document: ", error);
+                            });;
+
+                        }
+                        else {
+                            alert("Missing Date!")
+                        }
+                    }
+                    else {
+                        alert("Missing Time!")
+                    }
+                }
+                else {
+                    alert("Missing Phone Number!")
+                }
+            }
+            else {
+                alert("Missing Email!")
+            }
+        }
+        else {
+            alert("Missing Last Name!")
+        }
+    }
+    else {
+        alert("Missing First Name!")
+    }
 }
-
-db.collection("bookings").add({
-    first: "Raj",
-    last: "Raghulan",
-    email: "rajraghulan@gmail.com",
-    phoneNumber: "408-833-3466",
-    date:  "4-20-2021",
-    time: "14:00",
-})
-.then((docRef) => {
-    console.log("Document written with ID: ", docRef.id);
-})
-.catch((error) => {
-    console.error("Error adding document: ", error);
-});;
 
     

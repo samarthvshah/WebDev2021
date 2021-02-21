@@ -23,46 +23,57 @@
             <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
         </ul>
     </nav>
-    <hr>
-    <div class="aboutMeContainer">
-     <div class="row">
-            <div class="col-6">
-                <div class="">
-                    <h1>Schedule An Appointment</h1>
-                    <h2>"Pick the day that works best for you."</h2>
-                    <p>Work around your schedule and integrate your calendar</p> 
-                     <form>
+    <hr></hr>
+    <div class="appointmentContainer">
+        <h1>Schedule An Appointment</h1>
+
+        <div class="row">
+            <div class="col-5" > 
+                <div >
+                    <h2>Schedule the day that works best for you.</h2>
+                    <form >
                         <label for="fname">First name:</label><br>
 
-                        <input type="text" id="fname" name="fname"><br>
-
+                        <input class = "form" value = " " type="text" id="fname" name="fname" required>
+                        <br>
                         <label for="lname">Last name:</label><br>
 
-                        <input type="text" id="lname" name="lname">
+                        <input class = "form" value = " " type="text" id="lname" name="lname" required>
                         <br>
                         <label for="email">Email:</label><br>
 
-                        <input type="text" id="email" name="email">
+                        <input class = "form" value = " " type="text" id="email" name="email" required>
                         <br>
                         <label for="phoneNumber">Phone Number:</label><br>
-                        <input type="text" id="phoneNumber" name="phoneNumber">
+                        <input class = "form" value = " " type="text" id="phoneNumber" name="phoneNumber" required>
+                        <br>
+                        <label for="date">Time:</label><br>
+                        <input class = "form"  value = " "  id="time" type="time"  name="time" min="09:00" max="18:00" required>
                         <br>
                         <label for="date">Date:</label><br>
-                        <input id = "datePicker" type="date" id="start" name="appointment-date" value="2020-07-22"  min="2020-03-01" max="2020-12-31">
+                        <input class = "form" value = " " id = "datePicker" type="date" name="appointment-date" value="2020-07-22"  min="2020-03-01" max="2020-12-31" required>
                         <br>
-                        <input type="submit">
-
-                    </form>
+                        <br>
+                        <button class = "submit"onclick="addBooking()" type="button">Submit</button></form>
                 </div>
             </div>
+            <br>
+            <div class= "col-5">
+                <h2 id ="availability">Availability</h2>
+                <p class = "days"> Weekdays: 9:00 A.M. - 5:00 P.M. PST</p>
+                <p class = "days"> Weekends: 10:00 A.M. - 8:00 P.M. PST</p>
+                <iframe src="https://calendar.google.com/calendar/embed?src=p9905rp94g4u4sscc397r5kgsc%40group.calendar.google.com&ctz=America%2FLos_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            </div>
+        </div>
+        <h1 id = "mapCenter">
+            Popular Locations
+        </h1>
         <div id="map"></div>
     </div>
-    </div>  
     
     <footer>
         <div class="row">
             <div class="col-5">
-
                 <div class="footerLeft">
                     <p class="logo"> <img src= "img/logo.jpg"> </p>
                     <p>&#x2709;: info@omarwaseem.com</p>
@@ -72,14 +83,13 @@
                         <li><a href="https://www.youtube.com/omarwaseem" class="fa fa-youtube"></a></li>
                     </ul>
                 </div>
-
             </div>
             <div class="col-7">
                 <div class="footerRight">
                     <form>
                         <h2>Join My Newsletter</h2>
-                        <input class="inputbox" name="email" type="text" placeholder="Enter your email here">
-                        <button type="button">Submit</button>
+                        <input class="inputbox" id ="inputbox" name="email" type="text" placeholder="Enter your email here">
+                        <button onclick="addEmail()" type="button">Submit</button>
                     </form>
                     <ul class="hiddenLinks">
                         <li><a href="#">Privacy Policy</a></li>
@@ -92,17 +102,15 @@
         </div>
     </footer>
 
-    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <!--Scripts-->
     <script src="https://www.gstatic.com/firebasejs/8.2.8/firebase-app.js"></script>
-
-    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
     <script src="https://www.gstatic.com/firebasejs/8.2.8/firebase-analytics.js"></script>
-
-    <!-- Add Firebase products that you want to use -->
     <script src="https://www.gstatic.com/firebasejs/8.2.8/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.2.8/firebase-firestore.js"></script>>
+    <script src="https://www.gstatic.com/firebasejs/8.2.8/firebase-firestore.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCITEYFSBp_vRAPpfe2DbnYvacz4DGBRdk&callback=initMap&libraries=&v=weekly"async></script>
     <script src="js/google-map.js"></script>
+    <script src = "js/index.js"></script>
+    <script src = "js/newsletter.js"></script>
     <script src = "js/appointment.js"></script>
     <script src = "js/dropdown.js"></script>
 </body>
