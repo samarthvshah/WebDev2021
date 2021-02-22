@@ -41,6 +41,12 @@ background: url(../img/background.jpg) no-repeat center center fixed;
     clear: both;
     content: "";
 }
+.rowAppointments{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 
 
 .col-1 {width: 8.33%;}
@@ -299,6 +305,10 @@ form button:hover{
     margin-left: 55px; 
     text-align: center;
 }
+
+#scheduleHeader{
+    margin-bottom: 0px;
+}
 div.appointmentContainer{
     padding: 80px;
     padding-top: 0px;
@@ -314,12 +324,16 @@ div.appointmentContainer h1 {
     color: black;
     margin-top: 0px;
     font-weight: normal;
+    margin-bottom: 0px;
+
+    
 }
 
 div.appointmentContainer h2 {
     font-size: 30px;
     color: grey;
     font-weight: normal;
+    margin-bottom: 0px;
 }
 
 div.appointmentContainer p {
@@ -429,7 +443,7 @@ div.aboutMeContent ul.icons li a{
 }
 
 .priceGrid {
-    padding-left: 10%;
+    /* padding-left: 10%; */
 }
 
 .priceGrid div.price {

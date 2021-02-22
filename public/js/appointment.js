@@ -7,6 +7,8 @@ function addBooking(){
     var number = document.getElementById("phoneNumber").value;
     var time = document.getElementById("time").value;
     var date = document.getElementById("datePicker").value;
+    var selectElement =  document.querySelector('#plan'); 
+    var output = selectElement.value;
     if(firstName != " "){
         if(lastName != " "){
             if(email != " "){
@@ -19,7 +21,8 @@ function addBooking(){
                                     email: email,
                                     phoneNumber: number,
                                     time:time,
-                                    date: date 
+                                    date: date,
+                                    plan: plan
                                 })
                                 .then((docRef) => {
                                     alert("Booking Made!");
